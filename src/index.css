@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #f5f0f0;
+  /* box-sizing: border-box; */
+}
+
+
+
+.container {
+  width: 95%;
+  margin: auto;
+}
+
+.customer-qurry li:hover {
+  color: #ff5252;
+}
+
+.login li:hover {
+  color: #ff5252;
+}
+
+.MuiBadge-badge {
+  background-color: #ff5252;
+  color: white;
+}
+
+.category-link li:hover {
+  color: #ff5252;
+}
+
+.categoryPanel button {
+  text-transform: capitalize;
+}
+
+.group:hover .submenu {
+  opacity: 100;
+  visibility: visible;
+  transition: all 0.3sec;
+  z-index: 1000;
+}
+
+.group button {
+  text-transform: capitalize;
+}
+
+.swiper-img img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  overflow: hidden !important;
+}
+
+.swiper-img .swiper-button-prev {
+  background-color: #f4f0f0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 7px;
+  font-weight: 800 !important;
+  color: #1e1d1d !important;
+  margin-left: 130px !important;
+}
+
+
+.swiper-img .swiper-button-next {
+  background-color: #f4f0f0;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 7px;
+  font-weight: 800 !important;
+  color: #000000 !important;
+  margin-right: 130px !important;
+}
+
+.catslider .swiper-button-prev {
+  background-color: #c7c3c3;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 7px;
+  font-weight: 800 !important;
+  color: #000000 !important;
+}
+
+.catslider .swiper-button-prev:hover {
+  background-color: #ff5252;
+  color: #fff;
+}
+
+.catslider .swiper-button-next {
+  background-color: #c7c3c3;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 7px;
+  font-weight: 800 !important;
+  color: #111111 !important;
+}
+
+.catslider .swiper-button-next:hover {
+  background-color: #ff5252;
+  color: #fff;
+}
+
+.catslider img:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-in-out;
+}
+
+.AdsBanner .swiper-button-prev {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 7px;
+  font-weight: 800 !important;
+  color: #1e1d1d !important;
+}
+.AdsBanner .swiper-button-next {
+  background-color: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 7px;
+  font-weight: 800 !important;
+  color: #000000 !important;
+}
+
+.MuiTabs-indicator{
+  background-color: #ff5252 !important;
+} 
+.css-1usuzwp-MuiButtonBase-root-MuiTab-root.Mui-selected {
+    color: #ff5252 !important;
+}
