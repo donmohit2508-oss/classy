@@ -20,7 +20,7 @@ const Home = () => {
       <Slider />
       <HomeCatSlider />
 
-      <section className=' bg-white'>
+      <section className=' bg-white pb-15'>
         <div className='container'>
           <div className='flex items-center justify-between py-5'>
             <div className='left-sec'>

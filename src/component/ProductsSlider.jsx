@@ -8,7 +8,22 @@ import ProductsItem from './ProductsItem';
 const ProductsSlider = (props) => {
   return (
     <section className='ProductsSlider'>
-        <Swiper navigation={true} slidesPerView={props.items} spaceBetween={10} modules={[Navigation]} className="mySwiper">
+        <Swiper navigation={true} slidesPerView={props.items} spaceBetween={10} modules={[Navigation]} className="mySwiper AdsBanner">
+          <SwiperSlide>
+            <ProductsItem/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ProductsItem/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ProductsItem/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ProductsItem/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <ProductsItem/>
+          </SwiperSlide>
           <SwiperSlide>
             <ProductsItem/>
           </SwiperSlide>
