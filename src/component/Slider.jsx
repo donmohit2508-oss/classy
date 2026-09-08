@@ -9,7 +9,7 @@ const Slider = () => {
         <>
 
             <div className='py-4'>
-                    <Swiper  slidesPerView={1.2} centeredSlides={true} navigation={true} spaceBetween={10} modules={[Navigation, Autoplay]} autoplay={{ delay: 2000 }} className="mySwiper swiper-img">
+                    <Swiper  slidesPerView={1.2} centeredSlides={true} navigation={true} spaceBetween={10} modules={[Navigation, Autoplay]} loop={true} autoplay={{ delay: 2000 }} className="mySwiper swiper-img">
                         <SwiperSlide>
                             <img src="https://res.cloudinary.com/dwfml89qp/image/upload/v1760352199/1760352196147_banner7.jpg" alt="" />
                         </SwiperSlide>
