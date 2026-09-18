@@ -105,7 +105,7 @@ const Footer = () => {
 
                             <Button className='btn-org py-2! px-4!'>SUBSCRIBE</Button>
                         </form>
-                        <FormControlLabel control={<Checkbox  />} label="I agree to the term and conditions and  the privacy policy" />
+                        <FormControlLabel control={<Checkbox  />} label="label" />
                     </div>
 
                 </div>
@@ -129,4 +129,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;

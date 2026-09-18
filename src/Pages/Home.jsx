@@ -13,7 +13,7 @@ import 'swiper/css/navigation';
 
 import { Navigation } from 'swiper/modules';
 import BlogItem from '../component/BlogItem';
-import Footer from '../component/Footer';
+import ProductListing from './ProductListing';
 
 const Home = () => {
 
@@ -75,6 +75,8 @@ const Home = () => {
         </div>
       </section>
 
+      <ProductListing/>
+
       <section className='py-5 pt-0 bg-white'>
         <div className='container'>
           <h3 className='text-[20px] font-semibold'>Latest Products</h3>
@@ -116,7 +118,6 @@ const Home = () => {
         </div>
       </section>
 
-      <Footer/>
     </div>
   )
 }
