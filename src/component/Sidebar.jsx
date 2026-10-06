@@ -6,6 +6,9 @@ import { FaAngleDown } from "react-icons/fa6";
 import { FaAngleUp } from "react-icons/fa6";
 import Button from '@mui/material/Button';
 
+import RangeSlider from 'react-range-slider-input';
+// import 'react-range-slider-input/dist/style.css';
+
 
 
 
@@ -76,7 +79,14 @@ const Sidebar = () => {
         </Collapse>
       </div>
 
+      {/* <div className='box mt-3'>
+        <h3 className='w-full mb-3 text-[16px] font-medium flex items-center pr-5'>Filter by Price </h3>
+        <RangeSlider />
+      </div> */}
+
+      
     </aside>
+    
   )
 }
 

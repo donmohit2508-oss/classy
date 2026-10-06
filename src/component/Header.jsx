@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react';
 import { Link } from "react-router-dom";
 import Seacrch from './Seacrch';
 import Badge from '@mui/material/Badge';
@@ -8,12 +8,16 @@ import { GoGitCompare } from "react-icons/go";
 import { FaRegHeart } from "react-icons/fa";
 import Tooltip from '@mui/material/Tooltip';
 import Navigation from './Navigation';
+import {MyContext} from "../App";
 
 
 
 
 
 const Header = () => {
+
+    const context = useContext(MyContext);
+
     return (
         <>
             <header className='bg-white'>
@@ -64,16 +68,16 @@ const Header = () => {
                                         <Tooltip title="Wishlist">
                                             <IconButton aria-label="show 0 unread messages">
                                                 <Badge badgeContent={0} showZero>
-                                                    <MdOutlineShoppingCart />
+                                                    <FaRegHeart />
                                                 </Badge>
                                             </IconButton>
                                         </Tooltip>
                                     </li>
                                     <li>
                                         <Tooltip title="Cart">
-                                            <IconButton aria-label="show 0 unread messages">
-                                                <Badge badgeContent={0} showZero>
-                                                    <FaRegHeart />
+                                            <IconButton aria-label="cart" onClick={() => context.setOpenCartPanel(true)}>
+                                                <Badge badgeContent={4} showZero>
+                                                    <MdOutlineShoppingCart />
                                                 </Badge>
                                             </IconButton>
                                         </Tooltip>

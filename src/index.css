@@ -19,6 +19,12 @@ body {
   font-weight: 500 ;
   font-size: 16px  !important;
 }
+.btn-org:hover{
+  background-color: #171717 !important;
+}
+.btn-lg{
+  font-size: 18px  !important;
+}
 
 .customer-qurry li:hover {
   color: #ff5252;
@@ -172,4 +178,8 @@ body {
 
 .sidebar .scroll::-webkit-scrollbar-thumb{
   background-color: #ccc !important;
+}
+
+.cartPanel .MuiPaper-root{
+  width: 400px;
 }
