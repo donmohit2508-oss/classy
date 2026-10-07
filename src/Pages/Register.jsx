@@ -10,6 +10,24 @@ import { FcGoogle } from "react-icons/fc";
 const Register = () => {
 
     const [isShowPassword , setIsShowPassword] = useState(false);
+    const [formFields, setFormFields] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const onChangeInput=(e)=>{
+    const onChangeInput = (e) => {
+    const { name, value } = e.target;
+    setFormFields(() => {
+      return {
+        ...formFields,
+        [name]: value,
+      };
+    });
+  }; 
+  }
+  
 
   return (
     <section className='section py-10'>
@@ -18,13 +36,36 @@ const Register = () => {
             <h3 className="text-center text-[18px] text-black">Register with a new Account</h3>
             <form className='w-full mt-5'>
                 <div className='form-group w-full mb-5'>
-                    <TextField id="name" label="Full Name" variant="outlined" className='w-full'/>
+                    <TextField 
+                    id="name"
+                    name="name"
+                    label="Full Name" 
+                    variant="outlined" 
+                    className='w-full'
+                    onChange={onChangeInput}
+                    />
                 </div>
                 <div className='form-group w-full mb-5'>
-                    <TextField id="email" label="Email id" variant="outlined" className='w-full'/>
+                    <TextField 
+                    id="email" 
+                    name="email" 
+                    label="Email id" 
+                    variant="outlined" 
+                    className='w-full'
+                    onChange={onChangeInput}
+                    />
+                    
                 </div>
                 <div className='form-group w-full mb-5 relative'>
-                    <TextField type={isShowPassword === false ? 'password' : 'text'} id="password" label="Password " variant="outlined" className='w-full'/>
+                    <TextField 
+                    type={isShowPassword === false ? 'password' : 'text'} 
+                    id="password" 
+                    name="password" 
+                    label="Password " 
+                    variant="outlined" 
+                    className='w-full'
+                    onChange={onChangeInput}/>
+
                     <Button className="absolute! right-[10px] top-[10px] text-black! z-50 w-[35px]! h-[35px]! min-w-[35px]! rounded-full!" onClick={() => setIsShowPassword(!isShowPassword)}>
                     {isShowPassword === false ? (
                         <IoEyeSharp className="text-[20px] opacity-75" />

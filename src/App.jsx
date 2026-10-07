@@ -10,6 +10,7 @@ import Register from './Pages/Register';
 import Drawer from '@mui/material/Drawer';
 import Button from '@mui/material/Button';
 import { IoCloseSharp } from 'react-icons/io5';
+import CartPannel from './component/CartPannel';
 
 const MyContext = createContext();
 
@@ -48,17 +49,12 @@ const App = () => {
 
       {/* cart */}
       <Drawer open={openCartPanel} onClose={toggleCartPanel(false)} anchor={"right"} className='cartPanel'>
-        <div className='flex items-center justify-between py-3 px-4 gap-3 border-b border-[#000111]'>
+        <div className='flex items-center justify-between py-3 px-4 gap-3 border-b border-[#000111] overflow-hidden'>
           <h4>Shoping Cart (1) </h4>
           <IoCloseSharp  className='text-[20px] cursor-pointer' onClick={toggleCartPanel(false)}/>
         </div>
-        <div className='Scroll w-fill max-h-[300px] overflow-y-scroll overflow-x-hidden'>
-          <div className='cartItem w-full flex items-center'>
-            <div className='img'>
-              <img src="" alt="" />
-            </div>
-          </div>
-        </div>
+        
+        <CartPannel/>
       </Drawer>
       
     </>
